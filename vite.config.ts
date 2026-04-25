@@ -7,8 +7,22 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+<<<<<<< HEAD
   vite: {
     // Wichtig: Ersetze 'petanque' durch den exakten Namen deines GitHub-Repositorys
     base: '/petanque/',
   }
+=======
+  tanstackStart: {
+    spa: {
+      enabled: true,
+      prerender: {
+        outputPath: "/index.html",
+      },
+    },
+  },
+  cloudflare: {
+    viteEnvironment: { name: "ssr" },
+  },
+>>>>>>> 44b953d3ea1dd5ded987e267e5ebe698dda79675
 });
