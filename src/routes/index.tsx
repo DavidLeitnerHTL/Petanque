@@ -1,26 +1,34 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "@/components/site/Header";
+import { Hero } from "@/components/site/Hero";
+import { Info } from "@/components/site/Info";
+import { RoutePlanner } from "@/components/site/RoutePlanner";
+import { Nearby } from "@/components/site/Nearby";
+import { Reviews } from "@/components/site/Reviews";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "PSV Bad Leonfelden — Pétanque Sportverein" },
+      { name: "description", content: "Pétanque-Verein in Bad Leonfelden: 8 Bahnen, offenes Vereinsheim, Anfahrt, Öffnungszeiten und Bewertungen." },
+      { property: "og:title", content: "PSV Bad Leonfelden — Pétanque Sportverein" },
+      { property: "og:description", content: "Boule spielen im Mühlviertel. Komm vorbei, spiel eine Runde." },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main>
+      <Header />
+      <Hero />
+      <Info />
+      <RoutePlanner />
+      <Nearby />
+      <Reviews />
+      <Footer />
+    </main>
+  );
 }
