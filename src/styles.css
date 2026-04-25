@@ -1,7 +1,7 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
@@ -64,26 +64,30 @@
 
 :root {
   --radius: 0.5rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.18 0.02 250);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.02 250);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.02 250);
-  --primary: oklch(0.58 0.19 254);
-  --primary-foreground: oklch(0.99 0 0);
-  --primary-hover: oklch(0.52 0.2 254);
-  --secondary: oklch(0.97 0.005 250);
-  --secondary-foreground: oklch(0.2 0.02 250);
-  --muted: oklch(0.97 0.005 250);
-  --muted-foreground: oklch(0.5 0.02 250);
-  --accent: oklch(0.95 0.03 254);
-  --accent-foreground: oklch(0.4 0.15 254);
+  /* Sand / Gravel base */
+  --background: oklch(0.975 0.02 90);
+  --foreground: oklch(0.22 0.04 145);
+  --card: oklch(0.99 0.008 90);
+  --card-foreground: oklch(0.22 0.04 145);
+  --popover: oklch(0.99 0.008 90);
+  --popover-foreground: oklch(0.22 0.04 145);
+  /* Forest green #2d5a27 */
+  --primary: oklch(0.42 0.11 142);
+  --primary-foreground: oklch(0.98 0.01 90);
+  --primary-hover: oklch(0.36 0.11 142);
+  /* Sand secondary surface */
+  --secondary: oklch(0.94 0.03 90);
+  --secondary-foreground: oklch(0.25 0.05 145);
+  --muted: oklch(0.93 0.025 88);
+  --muted-foreground: oklch(0.45 0.03 130);
+  /* Terracotta accent #b35a38 */
+  --accent: oklch(0.6 0.14 42);
+  --accent-foreground: oklch(0.99 0.01 90);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --border: oklch(0.86 0.025 90);
+  --input: oklch(0.88 0.025 90);
+  --ring: oklch(0.42 0.11 142);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -141,7 +145,6 @@
 
   html {
     font-family: "Inter", system-ui, -apple-system, sans-serif;
-    font-feature-settings: "cv11", "ss01";
     -webkit-font-smoothing: antialiased;
   }
 
@@ -152,7 +155,9 @@
   }
 
   h1, h2, h3, h4 {
+    font-family: "Fraunces", Georgia, serif;
     letter-spacing: -0.02em;
+    font-optical-sizing: auto;
   }
 }
 
