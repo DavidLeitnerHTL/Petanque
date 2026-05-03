@@ -20,7 +20,7 @@ export function Info() {
             <div className="mt-10 space-y-5">
               <ContactRow
                 label="Adresse"
-                primary="Sportplatzstraße 12"
+                primary="Hagauerstraße 25"
                 secondary="4190 Bad Leonfelden, Österreich"
               />
               <ContactRow

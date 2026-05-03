@@ -57,7 +57,7 @@ export function Hero() {
 
           <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-6 sm:gap-8 max-w-md">
             <div>
-              <div className="text-2xl sm:text-3xl font-semibold text-primary">8</div>
+              <div className="text-2xl sm:text-3xl font-semibold text-primary">12</div>
               <div className="text-xs text-muted-foreground mt-1">Bahnen</div>
             </div>
             <div>
