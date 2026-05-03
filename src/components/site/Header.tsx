@@ -1,6 +1,38 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 
+function BouleMark() {
+  return (
+    <svg viewBox="0 0 44 26" width="36" height="22" aria-hidden="true">
+      <defs>
+        <clipPath id="hdr-clipL"><circle cx="10" cy="15" r="9.5" /></clipPath>
+        <clipPath id="hdr-clipR"><circle cx="34" cy="15" r="9.5" /></clipPath>
+        <clipPath id="hdr-clipM"><circle cx="22" cy="12" r="11" /></clipPath>
+      </defs>
+      {/* left boule */}
+      <circle cx="10" cy="15" r="9.5" fill="#9a9c9b" />
+      <g clipPath="url(#hdr-clipL)" transform="rotate(35 10 15)">
+        <ellipse cx="10" cy="15" rx="4" ry="12" fill="none" stroke="#fff" strokeWidth="1" transform="translate(-2,0)" />
+        <ellipse cx="10" cy="15" rx="12" ry="4" fill="none" stroke="#fff" strokeWidth="1" transform="translate(0,-2)" />
+      </g>
+      {/* right boule */}
+      <circle cx="34" cy="15" r="9.5" fill="#9a9c9b" />
+      <g clipPath="url(#hdr-clipR)" transform="rotate(-40 34 15)">
+        <ellipse cx="34" cy="15" rx="4" ry="12" fill="none" stroke="#fff" strokeWidth="1" transform="translate(-2,0)" />
+        <ellipse cx="34" cy="15" rx="12" ry="4" fill="none" stroke="#fff" strokeWidth="1" transform="translate(0,-2)" />
+      </g>
+      {/* middle boule (largest, in front) */}
+      <circle cx="22" cy="12" r="11" fill="#9a9c9b" />
+      <g clipPath="url(#hdr-clipM)" transform="rotate(-15 22 12)">
+        <ellipse cx="22" cy="12" rx="4.5" ry="13" fill="none" stroke="#fff" strokeWidth="1" transform="translate(-2,0)" />
+        <ellipse cx="22" cy="12" rx="13" ry="4.5" fill="none" stroke="#fff" strokeWidth="1" transform="translate(0,-2)" />
+      </g>
+      {/* red cochonnet */}
+      <circle cx="30" cy="23" r="3" fill="#bb133e" />
+    </svg>
+  );
+}
+
 const FACEBOOK_URL = "https://www.facebook.com/PetanqueSportVereinBadLeonfelden/";
 
 export function Header() {
@@ -31,9 +63,7 @@ export function Header() {
     >
       <div className="mx-auto max-w-6xl px-5 sm:px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2.5 group">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold text-sm shadow-sm">
-            P
-          </span>
+          <BouleMark />
           <span className="font-semibold tracking-tight text-sm sm:text-base">PSV Bad Leonfelden</span>
         </Link>
 

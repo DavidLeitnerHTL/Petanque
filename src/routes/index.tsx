@@ -6,6 +6,7 @@ import { ClubGallery } from "@/components/site/ClubGallery";
 import { NextEvents } from "@/components/site/NextEvents";
 import { Info } from "@/components/site/Info";
 import { Footer } from "@/components/site/Footer";
+import { IntroSplash } from "@/components/site/IntroSplash";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,6 +30,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main>
+      <IntroSplash />
       <Header />
       <Hero />
       <AboutClub />
