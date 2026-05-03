@@ -1,6 +1,6 @@
-import courtImg from "@/assets/court-barrel-umbrella.jpg";
-import throwImg from "@/assets/gallery-throw.jpg";
-import friendsImg from "@/assets/gallery-friends.jpg";
+import clubHutImg from "@/assets/club-hut.jpg";
+import courtFenceImg from "@/assets/court-fence.jpg";
+import courtShadowsImg from "@/assets/court-shadows.jpg";
 import boulesTopImg from "@/assets/gallery-boules-top.jpg";
 import boulesDetailImg from "@/assets/boules-detail.jpg";
 
@@ -23,13 +23,13 @@ export function ClubGallery() {
         {/* CSS columns masonry — works perfectly on mobile */}
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 [&>*]:mb-4 [&>*]:break-inside-avoid">
           <GalleryItem
-            src={courtImg}
-            alt="Pétanque-Bahn mit Weinfass und buntem Sonnenschirm"
+            src={clubHutImg}
+            alt="Vereinshütte des PSV Bad Leonfelden"
             ratio="aspect-[4/5]"
             featured
           />
-          <GalleryItem src={friendsImg} alt="Mitglieder des PSV beim Anstoßen" ratio="aspect-[4/3]" />
-          <GalleryItem src={throwImg} alt="Wurf einer Pétanque-Kugel" ratio="aspect-square" />
+          <GalleryItem src={courtFenceImg} alt="Pétanque-Anlage des PSV Bad Leonfelden" ratio="aspect-[4/3]" />
+          <GalleryItem src={courtShadowsImg} alt="Pétanque-Bahnen mit langen Schatten" ratio="aspect-square" />
           <GalleryItem src={boulesTopImg} alt="Pétanque-Kugeln rund um das Schweinchen" ratio="aspect-[4/5]" />
           <GalleryItem src={boulesDetailImg} alt="Pétanque-Kugeln auf feinem Kies" ratio="aspect-[4/3]" />
         </div>

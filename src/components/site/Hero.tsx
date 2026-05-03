@@ -1,4 +1,4 @@
-import heroImg from "@/assets/hero-petanque.jpg";
+import heroImg from "@/assets/court-shadows.jpg";
 
 const FACEBOOK_URL = "https://www.facebook.com/PetanqueSportVereinBadLeonfelden/";
 
@@ -11,7 +11,7 @@ export function Hero() {
           alt="Pétanque-Anlage des PSV Bad Leonfelden"
           width={1920}
           height={1280}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-[center_30%]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/40 to-transparent" />
