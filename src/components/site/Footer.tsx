@@ -27,12 +27,12 @@ export function Footer() {
               <li className="text-muted-foreground">4190 Bad Leonfelden</li>
               <li className="pt-2">
                 <a href="tel:+43721312345" className="hover:text-primary transition">
-                  +43 7213 12345
+                  0676 5400838
                 </a>
               </li>
               <li>
                 <a href="mailto:info@psv-leonfelden.at" className="hover:text-primary transition">
-                  info@psv-leonfelden.at
+                  boule@liwest.at
                 </a>
               </li>
             </ul>

@@ -25,12 +25,12 @@ export function Info() {
               />
               <ContactRow
                 label="Telefon"
-                primary="+43 7213 12345"
-                secondary="Obmann Franz Huber"
+                primary="0676 5400838"
+                secondary="Obmann Mag. Arnold Wiesberger"
               />
               <ContactRow
                 label="E-Mail"
-                primary="info@psv-leonfelden.at"
+                primary="boule@liwest.at"
                 secondary="Antwort innerhalb 48h"
               />
             </div>
