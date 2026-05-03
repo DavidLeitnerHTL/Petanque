@@ -23,7 +23,7 @@ export function Footer() {
               Kontakt
             </h4>
             <ul className="space-y-2 text-sm">
-              <li className="text-muted-foreground">Sportplatzstraße 12</li>
+              <li className="text-muted-foreground">Hagauerstraße 25</li>
               <li className="text-muted-foreground">4190 Bad Leonfelden</li>
               <li className="pt-2">
                 <a href="tel:+43721312345" className="hover:text-primary transition">
