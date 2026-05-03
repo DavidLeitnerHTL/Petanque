@@ -1,7 +1,7 @@
 const trainings = [
   {
     day: "Donnerstag",
-    time: "ab 15:00",
+    time: "ab 14:00",
     note: "Wochenmitte-Training. Offen für alle Mitglieder und Gäste.",
   },
   {
